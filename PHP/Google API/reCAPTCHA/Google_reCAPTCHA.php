@@ -7,7 +7,6 @@
 CAPTCHA demo, Google CAPTCHA, CAPTCHA LiveDemo, dreamscoder.com,dreamscoder">
 <meta name="author" content="Chinmay Mahajan">
 <title>Integrating Google reCAPTCHA Demo Dreamscoder </title>
-
 <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
@@ -16,7 +15,7 @@ CAPTCHA demo, Google CAPTCHA, CAPTCHA LiveDemo, dreamscoder.com,dreamscoder">
 <form action="" method="post">
 Name : <input type="text" name="name"><br>
 City : <input type="text" name="city"><br><br>
-<div class="g-recaptcha" data-sitekey="***** YOUR SITE KEY goes here *****"></div>
+<div class="g-recaptcha" data-sitekey="6Lf7OlkUAAAAALzeb3V0z4TqEugRKiOs9QsOteg7"></div>
 <input type="submit" name="submit" value="submit">
 
 </form>
@@ -29,7 +28,7 @@ if(isset($_POST['submit']))
 function CheckCaptcha($userResponse) {
         $fields_string = '';
         $fields = array(
-            'secret' => '****** YOUR SECRET KEY goes here ******',
+            'secret' => ´6Lf7OlkUAAAAAIJhBXpYYI4A8zNta_4s3pH9Dyah',
             'response' => $userResponse
         );
         foreach($fields as $key=>$value)
